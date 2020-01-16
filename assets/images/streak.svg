@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 182">
+  <defs>
+    <style>
+      .cls-1{fill:#4c5c68;}
+      .cls-2{fill:#9fa8ae;}
+    </style>
+  </defs>
+  <title>aiAsset 1</title>
+      <circle fill="cls-1" cx="91" cy="91" r="91"/>
+      <circle class="cls-2" cx="91" cy="91" r="69"/>
+    </svg>

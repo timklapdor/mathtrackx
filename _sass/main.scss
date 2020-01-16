@@ -1,0 +1,244 @@
+// COLOURS
+
+$color-adl-blue: #102535;
+$color-adl-red: #d40000;
+$color-adl-midblue: #005a9c;
+$color-adl-gold: #b38808;
+$color-main: #63E33B;
+
+
+// SETTINGS
+$backgroundColor: #fff;
+$bodyColor: #222;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$radius: .25em;
+
+// PALLETTES
+
+$color-main-darker: darken($color-main, 35%);
+$color-main-dark: darken($color-main, 25%);
+$color-main-light: lighten($color-main, 25%);
+$color-main-lighter: lighten($color-main, 35%);
+
+$color-adl-blue-darker: darken($color-adl-blue, 35%);
+$color-adl-blue-dark: darken($color-adl-blue, 25%);
+$color-adl-blue-light: lighten($color-adl-blue, 25%);
+$color-adl-blue-lighter: lighten($color-adl-blue, 35%);
+
+
+$color-adl-red-darker: darken($color-adl-red, 35%);
+$color-adl-red-dark: darken($color-adl-red, 25%);
+$color-adl-red-light: lighten($color-adl-red, 25%);
+$color-adl-red-lighter: lighten($color-adl-red, 35%);
+
+$color-grey: mix(white, $bodyColor, 55%);
+$color-grey-darker: darken($color-grey, 30%);
+$color-grey-dark: darken($color-grey, 10%);
+$color-grey-light: lighten($color-grey, 25%);
+$color-grey-lighter: lighten($color-grey, 35%);
+
+
+$gradient: linear-gradient(90deg, $color-main 0%, $bodyColor 100%);
+$gradient-rev: linear-gradient(90deg, $bodyColor 0%, $color-main 100%);
+$gradient-blue: linear-gradient(180deg, $color-main 0%, $color-adl-blue 100%);
+
+$shadow: 0 3px 6px rgba(200,200,200,0.19), 0 3px 6px rgba(200,200,200,0.23) !important;
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+a {
+  color: $color-main-darker;
+
+  &:hover {
+  color: $color-main-dark;
+}
+}
+
+h1 {
+  padding-bottom: .5em;
+  border-bottom: .2em solid;
+  border-image: $gradient 1;
+  border-radius: $radius;
+
+  &.box {
+  color: #fff;
+  padding: .7em;
+  background: $gradient-rev;
+  border: none;
+  border-radius: $radius;
+}
+}
+
+// icons - external links call out
+//
+// maths example box
+//
+// steps
+//
+// instructions
+//
+// streak builder visual
+
+.box {
+  background: $color-grey-lighter;
+  border: 1px solid $color-grey-light;
+  border-radius: $radius;
+  padding: 1em 2em;
+  margin: .7em 0;
+
+  &.top {
+  border-top: .7em solid $color-grey-darker;
+  }
+
+  &.side {
+  border: 1px solid $color-grey-light;
+  border-left: .7em solid $color-grey-darker;
+  }
+
+  &.solid {
+    color: #fff;
+    background: $color-grey-darker;
+  }
+}
+
+.border-main { border-color: $color-main !important;}
+.border-main-dark { border-color: $color-main-dark !important;}
+.border-main-light { border-color: $color-main-light !important;}
+.border-body { border-color: $bodyColor !important; background-color: lighten($bodyColor, 80%) !important;}
+.border-adl-red { border-color: $color-adl-red !important; background-color: lighten($color-adl-red, 55%) !important;}
+
+.background-main {background-color: $color-main !important; }
+.background-main-dark {background-color: $color-main-dark !important; }
+.background-main-darker {background-color: $color-main-darker !important; }
+.background-adl-blue {background-color: $color-adl-blue !important; }
+.background-adl-red {background-color: $color-adl-red !important; }
+.background-adl-gold {background-color: $color-adl-gold !important;}
+.background-adl-midblue {background-color: $color-adl-midblue !important;}
+
+
+.external-link {}
+
+.step-instructions {}
+
+.sandbox {}
+
+.worked-example {}
+
+.step-list {
+  list-style-type: none !important;
+  margin-left: 3em;
+  background: $color-grey-lighter;
+  padding: 1em 1em 1em 4em;
+  border: 1px solid $color-grey-light;
+  border-radius: $radius;
+}
+
+.step-list li {
+  padding: 1em;
+  border-bottom: 1px solid $color-grey-light;
+  counter-increment: step-counter;
+  margin-left: 1em;
+  line-height: 1.4;
+}
+
+.step-list li:before {
+  content: 'step ' counter(step-counter);
+  text-transform: uppercase;
+  font-size: .7em;
+  background: $color-main-darker;
+  color: #fff;
+  padding: .5em;
+  margin-left: -6em;
+  margin-right: 1.7em;
+  border-radius: $radius;
+}
+
+.streak {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  color: #fff;
+  background: $color-adl-blue;
+  border-radius: $radius;
+
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+    padding: 0em 1em;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+
+  li {
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    &.active svg .count {fill: $color-main;}
+  }
+}
+
+article.callout {
+  display: flex;
+  margin: 1em;
+  border: 1px solid $color-grey-light;
+  border-radius: $radius;
+  box-shadow: $shadow;
+
+  .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .icon {
+
+    svg {
+      padding: 1em; width: 10em;}
+
+    &.blue {background-color: $color-adl-blue;}
+    &.red {background-color: $color-adl-red;}
+    &.main {background-color: $color-main;}
+    &.grey {background-color: $color-grey;}
+  }
+
+
+
+  .description {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  &.side {
+    flex-direction: row;
+  }
+
+  &.stack {
+    flex-direction: column;
+    .image {
+      max-height: 20em;
+      overflow: hidden;
+  }
+}
+}
