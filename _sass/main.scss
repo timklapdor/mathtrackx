@@ -5,6 +5,7 @@ $color-adl-red: #d40000;
 $color-adl-midblue: #005a9c;
 $color-adl-gold: #b38808;
 $color-main: #63E33B;
+$color-alt: #139F4F;
 
 
 // SETTINGS
@@ -90,13 +91,22 @@ h1 {
   padding: 1em 2em;
   margin: .7em 0;
 
-  &.top {
-  border-top: .7em solid $color-grey-darker;
+  p {
+    margin: 0 !important;
   }
 
   &.side {
   border: 1px solid $color-grey-light;
   border-left: .7em solid $color-grey-darker;
+  }
+
+  &.top {
+  border-top: .7em solid $color-grey-darker;
+  }
+
+  &.top-alt {
+  border-color: $color-alt !important;
+  background-color: lighten($color-alt, 80%) !important;
   }
 
   &.solid {
@@ -105,11 +115,17 @@ h1 {
   }
 }
 
-.border-main { border-color: $color-main !important;}
+.border-main { border-color: $color-main !important; background-color: lighten($color-main, 80%) !important;}
 .border-main-dark { border-color: $color-main-dark !important;}
 .border-main-light { border-color: $color-main-light !important;}
-.border-body { border-color: $bodyColor !important; background-color: lighten($bodyColor, 80%) !important;}
+
+.border-alt { border-color: $color-alt !important; background-color: lighten($color-alt, 80%) !important;}
+
+.border-adl-blue { border-color: $color-adl-blue !important; background-color: lighten($color-adl-blue, 80%) !important;}
+
 .border-adl-red { border-color: $color-adl-red !important; background-color: lighten($color-adl-red, 55%) !important;}
+
+.border-adl-midblue { border-color: $color-adl-midblue !important; background-color: lighten($color-adl-midblue, 65%) !important;}
 
 .background-main {background-color: $color-main !important; }
 .background-main-dark {background-color: $color-main-dark !important; }
@@ -143,6 +159,10 @@ h1 {
   counter-increment: step-counter;
   margin-left: 1em;
   line-height: 1.4;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .step-list li:before {
@@ -197,26 +217,28 @@ article.callout {
   border-radius: $radius;
   box-shadow: $shadow;
 
-  .image {
-    flex: 1 .5 auto;
+  // .image {
+  //   flex: 1 .5 auto;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //   }
+  // }
+  .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  .icon {
-
     svg {
       padding: 1em; width: 10em;}
 
     &.blue {background-color: $color-adl-blue;}
-    &.red {background-color: $color-adl-red;}
-    &.main {background-color: $color-main;}
-    &.grey {background-color: $color-grey;}
+    // &.red {background-color: $color-adl-red;}
+    // &.main {background-color: $color-main;}
+    // &.grey {background-color: $color-grey;}
   }
 
 
@@ -233,22 +255,36 @@ article.callout {
   &.side {
     flex-direction: row;
 
-    .image {
-      background-image: url(../images/pattern-vertical.jpg);
-      background-position: center center;
-      background-size: cover;
-      flex: 1 1 5em !important;
-      max-width: 20vw;
-
-      overflow: hidden;
-    }
+    // .image {
+    //   background-image: url(../images/pattern-vertical.jpg);
+    //   background-position: center center;
+    //   background-size: cover;
+    //   flex: 1 1 5em !important;
+    //   max-width: 20vw;
+    //
+    //   overflow: hidden;
+    // }
   }
 
   &.stack {
     flex-direction: column;
-    .image {
-      max-height: 20em;
-      overflow: hidden;
-  }
+  //   .image {
+  //     max-height: 20em;
+  //     overflow: hidden;
+  // }
 }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  img {
+    border-radius: 50%;
+    border: 1px solid $color-grey-light;
+    height: 8em;
+  }
+  h2 {
+    padding-left: 1.2em;
+  }
 }
