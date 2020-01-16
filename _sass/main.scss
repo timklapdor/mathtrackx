@@ -130,7 +130,7 @@ h1 {
 
 .step-list {
   list-style-type: none !important;
-  margin-left: 3em;
+  margin: 0 1em;
   background: $color-grey-lighter;
   padding: 1em 1em 1em 4em;
   border: 1px solid $color-grey-light;
@@ -198,7 +198,7 @@ article.callout {
   box-shadow: $shadow;
 
   .image {
-    flex: 1;
+    flex: 1 .5 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,7 +224,7 @@ article.callout {
   .description {
     flex: 2;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 1em;
@@ -232,6 +232,16 @@ article.callout {
 
   &.side {
     flex-direction: row;
+
+    .image {
+      background-image: url(../images/pattern-vertical.jpg);
+      background-position: center center;
+      background-size: cover;
+      flex: 1 1 5em !important;
+      max-width: 20vw;
+
+      overflow: hidden;
+    }
   }
 
   &.stack {
