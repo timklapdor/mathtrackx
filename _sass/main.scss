@@ -71,6 +71,7 @@ h1 {
   background: $gradient-rev;
   border: none;
   border-radius: $radius;
+  max-width: 100%;
 }
 }
 
@@ -217,17 +218,17 @@ article.callout {
   border-radius: $radius;
   box-shadow: $shadow;
 
-  // .image {
-  //   flex: 1 .5 auto;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   img {
-  //     width: 100%;
-  //     height: 100%;
-  //     object-fit: cover;
-  //   }
-  // }
+  .image {
+    flex: 1 .5 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   .icon {
     display: flex;
     align-items: center;
@@ -287,4 +288,43 @@ article.callout {
   h2 {
     padding-left: 1.2em;
   }
+}
+
+.accent {
+  color: #63E33B;
+}
+
+.accent2 {
+  color: $color-adl-red;
+}
+
+svg {
+  width: 20%;
+  padding: .5em;
+  fill: currentColor;
+}
+
+.colours {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette {
+  width: 50%;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  div {
+    height: 3vh;
+  }
+}
+
+.test {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
