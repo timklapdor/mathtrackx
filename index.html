@@ -2,11 +2,21 @@
 layout: default
 title: "Happy Jekylling!"
 palette:
-  - "-light"
-  - "-lighter"
-  - "-dark"
-  - "-darker"
+- green
+- turquoise
+- blue
+- purple
+- magenta
+- orange
+- primary
+- red
+- midblue
+- gold
+- neutral
+- accent
 ---
+
+
 <script type="text/css" src="edge.edx.org/asset-v1:AdelaideX+MATHPROTOX+2019_T4+type@asset+block@maths-track-x.css">
 
 </script>
@@ -15,47 +25,35 @@ palette:
   <h2 class="green-lightest">Testing 1234... </h2>
 </div>
 
+<figure class="flourish accent">
+  <img src="assets/images/photo.jpg" alt="">
+</figure>
+
+<figure class="flourish orange">
+  <img src="assets/images/photo.jpg" alt="">
+  <figcaption>We're doing all kinds of crazy stuff right now</figcaption>
+</figure>
+
 <div class="colours">
+  {% for colour in page.palette %}
 <div class="palette">
-  <div class="green-bg-tint"></div>
-  <div class="green-bg-lighter"></div>
-  <div class="green-bg-light"></div>
-  <div class="green-bg"></div>
-  <div class="green-bg-dark "></div>
-  <div class="green-bg-darker "></div>
-  <div class="green-bg-darkest "></div>
+  <div class="{{ colour }}-bg-tint"><p class="{{ colour }}-dark">Tint </p></div>
+  <div class="{{ colour }}-bg-lighter"><p class="{{ colour }}-lightest">Lighter</p></div>
+  <div class="{{ colour }}-bg-light"><p class="{{ colour }}-lightest">Light</p></div>
+  <div class="{{ colour }}-bg root"><p class="{{ colour }}-lightest">{{ colour | capitalize}} </p></div>
+  <div class="{{ colour }}-bg-dark "><p class="{{ colour }}-lightest">Dark</p></div>
+  <div class="{{ colour }}-bg-darker "><p class="{{ colour }}-lightest">Darker</p></div>
+  <div class="{{ colour }}-bg-darkest "><p class="{{ colour }}-lightest">Darkest</p></div>
+  <div class="{{ colour }}-bg-trans-50 "><p class="{{ colour }}-lightest">Trans 50</p></div>
+  <div class="{{ colour }}-bg-trans-70 "><p class="{{ colour }}-lightest">Trans 70</p></div>
+  <div class="{{ colour }}-bg-trans-80 "><p class="{{ colour }}-lightest">Trans 80</p></div>
 
 </div>
-<div class="palette">
-  <div class="blue-bg-tint"></div>
-  <div class="blue-bg-lighter"></div>
-  <div class="blue-bg-light"></div>
-  <div class="blue-bg"></div>
-  <div class="blue-bg-dark "></div>
-  <div class="blue-bg-darker"></div>
-  <div class="blue-bg-darkest"></div>
-</div>
-<div class="palette">
-  <div class="purple-bg-tint"></div>
-  <div class="purple-bg-lighter"></div>
-  <div class="purple-bg-light"></div>
-  <div class="purple-bg"></div>
-  <div class="purple-bg-dark"></div>
-  <div class="purple-bg-darker"></div>
-  <div class="purple-bg-darkest"></div>
-</div>
-<div class="palette">
-  <div class="neutral-bg-tint"></div>
-  <div class="neutral-bg-lighter"></div>
-  <div class="neutral-bg-light"></div>
-  <div class="neutral-bg"></div>
-  <div class="neutral-bg-dark"></div>
-  <div class="neutral-bg-darker"></div>
-  <div class="neutral-bg-darkest"></div>
-</div>
-</div>
+  {% endfor %}
 
-<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" class="green-lighter">
+</div>
+<div class="test">
+<svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" class="blue-lighter">
   <g id="poly-icon" data-name="Poly Icon">
     <path d="M130.4,106.4a33.9,33.9,0,0,1-32,.15C75.84,95.28,53.88,60.18,31.89,0H25.46C50.76,79.62,76,125.9,101,138.41c9,4.5,17.78,4.46,26.79-.13q16-8.17,32.24-35V77.07Q145.33,98.82,130.4,106.4Z"/>
     <path d="M130.4,143.47a33.9,33.9,0,0,1-32,.15C71.56,130.22,45.54,83,19.33,0H0V160H160V114.14Q145.33,135.91,130.4,143.47Z"/>
@@ -69,7 +67,7 @@ palette:
       <path d="M0,0V165.76H165.76V0ZM160,160H13a400.12,400.12,0,0,1,57.72-30.47c34.62-14.89,63.33-23.19,89.25-27.81Zm0-64.15c-26.55,4.65-56,13.1-91.53,28.4A403.32,403.32,0,0,0,5.76,157.84v-20L160,72.9Zm0-29.19L5.76,131.59V110.05A401.81,401.81,0,0,0,59.19,94.86C103,78.81,136,58.8,160,40.33ZM57.21,89.45A393.46,393.46,0,0,1,5.76,104.16V5.76H160V33C136.19,51.93,102.63,72.82,57.21,89.45Z"/>
   </g>
 </svg>
-
+</div>
 <h1>You're ready to go!</h1>
 
 <h1 class="box">You're ready to go!</h1>
@@ -77,7 +75,7 @@ palette:
 <p>Start developing your Jekyll website.</p>
 <a href="#">Googlde</a>
 
-<article class="streak">
+<!-- <article class="streak">
  <h2>Streak Test</h2>
   <p>Test yourself! Try the problem below and get the right asnwer 5 times in a row to complete your streak.</p>
   <ul>
@@ -88,7 +86,7 @@ palette:
     <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 182"><circle fill="#4c5c68" cx="91" cy="91" r="91"/><circle class="count" fill="#9fa8ae" cx="91" cy="91" r="69"/></svg>
     </li>
   </ul>
-</article>
+</article> -->
 
 <article class="callout stack">
   <section class="image">
@@ -96,26 +94,32 @@ palette:
   </section>
   <section class="description">
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-        <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-      <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
   </section>
 </article>
 
 <article class="callout side">
   <section class="image">
+    <img src="assets/images/photo.jpg" alt="">
   </section>
   <section class="description">
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-        <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-            <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-                <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-                    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
   </section>
 </article>
 
 <article class="callout side">
-  <section class="icon blue">
+  <section class="icon primary-bg">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.76 165.76"><defs><style>.cls-1{fill:none;stroke:#102535;stroke-miterlimit:10;stroke-width:5.76px;}</style></defs><title>Asset 13</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M162.88,2.88H2.88v160h160ZM142,82.86A59.1,59.1,0,0,1,82.88,142m0-118.18A59.09,59.09,0,0,0,23.79,82.86M74.37,32.63l8.87-8.86-8.87-8.86M92.09,133.12,83.23,142l8.86,8.86m23-92.22-48.5,48.5-16-16"/></g></g></svg>
   </section>
   <section class="description">
@@ -125,8 +129,15 @@ palette:
 </article>
 
 <article class="callout side">
-  <section class="icon blue">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.76 165.76"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:5.76px;}</style></defs><title>Asset 12</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M162.88,2.88H2.88v160h160Zm-103.5,47h-34v-34h34Zm15-23.5h72m-72,13h51m-66,60.5h-34v-34h34Zm15-23.5h72m-72,13h51m-66,60.5h-34v-34h34Zm15-23.5h72m-72,13h51"/></g></g></svg>
+  <section class="icon orange primary-bg-light">
+    <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" >
+      <g id="poly-icon" data-name="Poly Icon">
+        <path d="M130.4,106.4a33.9,33.9,0,0,1-32,.15C75.84,95.28,53.88,60.18,31.89,0H25.46C50.76,79.62,76,125.9,101,138.41c9,4.5,17.78,4.46,26.79-.13q16-8.17,32.24-35V77.07Q145.33,98.82,130.4,106.4Z"/>
+        <path d="M130.4,143.47a33.9,33.9,0,0,1-32,.15C71.56,130.22,45.54,83,19.33,0H0V160H160V114.14Q145.33,135.91,130.4,143.47Z"/>
+        <path d="M130.4,77.36a33.9,33.9,0,0,1-32,.15C79.74,68.2,61.51,42.59,43.32,0h-5.2c21.05,57.05,42,90.92,62.85,101.33,9,4.51,17.78,4.47,26.79-.12q16-8.19,32.24-35V48Q145.33,69.78,130.4,77.36Z"/>
+        <path d="M49.68,0Q75.43,59.46,101,72.29c9,4.51,17.77,4.47,26.79-.12q16-8.18,32.24-35V0Z"/>
+      </g>
+    </svg>
   </section>
   <section class="description">
     <h2> Interactive parabola problem </h2>
@@ -142,13 +153,17 @@ palette:
   <li></li>
 </ul>
 
-<div class="box side border-alt">
+<div class="box side accent-border">
   <p>Consider, again, Monet’s haystack paintings. They’re a remarkable study of light, and wonderful from a purely aesthetic standpoint. But from a design standpoint, there’s a useful lesson to be found in them. In the words of another French impressionist, Pierre Bonnard, “Color does not add a pleasant quality to design—it reinforces it.” Remember the way the color of light affected the appearance of Monet’s haystacks. What if we could take our base colors and easily influence the color in our designs the way he did back in 1890?</p>
 </div>
-<div class="box side border-body">
+<div class="box side purple-border">
   <p>Consider, again, Monet’s haystack paintings. They’re a remarkable study of light, and wonderful from a purely aesthetic standpoint. But from a design standpoint, there’s a useful lesson to be found in them. In the words of another French impressionist, Pierre Bonnard, “Color does not add a pleasant quality to design—it reinforces it.” Remember the way the color of light affected the appearance of Monet’s haystacks. What if we could take our base colors and easily influence the color in our designs the way he did back in 1890?</p>
 </div>
 
-<div class="box top border-adl-blue">
+<div class="box top gold-border">
+  <p>Consider, again, Monet’s haystack paintings. They’re a remarkable study of light, and wonderful from a purely aesthetic standpoint. But from a design standpoint, there’s a useful lesson to be found in them. In the words of another French impressionist, Pierre Bonnard, “Color does not add a pleasant quality to design—it reinforces it.” Remember the way the color of light affected the appearance of Monet’s haystacks. What if we could take our base colors and easily influence the color in our designs the way he did back in 1890?</p>
+</div>
+
+<div class="box accent-gradient">
   <p>Consider, again, Monet’s haystack paintings. They’re a remarkable study of light, and wonderful from a purely aesthetic standpoint. But from a design standpoint, there’s a useful lesson to be found in them. In the words of another French impressionist, Pierre Bonnard, “Color does not add a pleasant quality to design—it reinforces it.” Remember the way the color of light affected the appearance of Monet’s haystacks. What if we could take our base colors and easily influence the color in our designs the way he did back in 1890?</p>
 </div>

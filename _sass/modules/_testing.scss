@@ -1,0 +1,41 @@
+.colours {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette {
+  width: 50%;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  div {
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.root {
+        height: 10vh
+      }
+}
+}
+
+.test {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 20%;
+    padding: .5em;
+    fill: currentColor;
+  }
+}
+
+html {
+  padding: 4vh 10vw;
+}

@@ -1,0 +1,62 @@
+figure {
+  margin: 1em 0;
+  z-index: 1;
+  max-width: 100%;
+
+  &.flourish {
+    position: relative;
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    grid-template-rows: 1fr;
+
+
+    figcaption {
+      grid-row: 1 / 1;
+      grid-column: 2;
+      display: flex;
+      align-items: center;
+      padding: 10% 10%;
+      font-size: 4em;
+      color: $rev;
+      text-shadow: $text-shadow;
+      text-align: right;
+    }
+
+    img {
+      grid-row: 1 / 1;
+      grid-column: 1 / span 2;
+    }
+  }
+  &.flourish:before {
+    position: absolute;
+    content:" ";
+    top:0;
+    right:0;
+    width:calc(100% - 2em);
+    height:100%;
+    z-index:100;
+  }
+
+  @each $color, $value in $ui-colors{
+      &.#{$color}.flourish:before {
+      background: linear-gradient(90deg, rgba($value,0.4) 0%, rgba($value,0.4) 15%, rgba($value,0) 15%);
+      border-left: 2em solid $value;
+    }
+  }
+
+
+@each $color, $value in $brand-colors{
+    &.#{$color}.flourish:before {
+    background: linear-gradient(90deg, rgba($value,0.4) 0%, rgba($value,0.4) 15%, rgba($value,0) 15%);
+    border-left: 2em solid $value;
+  }
+}
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+
+}

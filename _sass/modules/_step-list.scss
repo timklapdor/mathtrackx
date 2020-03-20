@@ -1,0 +1,32 @@
+.step-list {
+  list-style-type: none !important;
+  margin: 0 1em;
+  background: $neutral-lighter;
+  padding: 1em 1em 1em 4em;
+  border: 1px solid $neutral-light;
+  border-radius: $radius;
+
+  & li {
+  padding: 1em;
+  border-bottom: 1px solid $neutral-light;
+  counter-increment: step-counter;
+  margin-left: 1em;
+  line-height: 1.4;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+}
+
+.step-list li:before {
+  content: 'step ' counter(step-counter);
+  text-transform: uppercase;
+  font-size: .7em;
+  background: $accent-darker;
+  color: #fff;
+  padding: .5em;
+  margin-left: -6em;
+  margin-right: 1.7em;
+  border-radius: $radius;
+}

@@ -1,0 +1,29 @@
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+a {
+  color: $accent-darker;
+
+  &:hover, &:focus {
+  color: $accent;
+}
+}
+
+h1 {
+  padding-bottom: .1em;
+  border-bottom: .2em solid;
+  border-image: $gradient 1;
+  border-radius: $radius;
+
+  &.box {
+  color: #fff;
+  padding: .7em;
+  background: $gradient-rev;
+  border: none;
+  border-radius: $radius;
+  max-width: 100%;
+}
+}

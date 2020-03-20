@@ -1,0 +1,20 @@
+.box {
+  background: $neutral-lighter;
+  border: 1px solid $neutral-light;
+  border-radius: $radius;
+  padding: 1em 2em;
+  margin: .7em 0;
+
+  p {
+    margin: 0 !important;
+  }
+
+  &.side {
+  border: 1px solid $neutral-light;
+  border-left: .7em solid $neutral-darker;
+  }
+
+  &.top {
+  border-top: .7em solid $neutral-darker;
+  }
+}

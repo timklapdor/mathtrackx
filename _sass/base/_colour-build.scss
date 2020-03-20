@@ -1,0 +1,94 @@
+$accent-lighter: lighten($accent, 15%);
+$accent-light:  lighten($accent, 10%);
+$accent-dark:  mix(black, $accent, 25%);
+$accent-darker:  mix(black, $accent, 35%);
+$accent-tint:  mix(white, $accent, 95%);
+$accent-trans-50: transparentize($accent, .5);
+$accent-trans-70: transparentize($accent, .7);
+$accent-trans-80: transparentize($accent, .8);
+
+$primary-lighter: lighten($primary, 15%);
+$primary-light:  lighten($primary, 10%);
+$primary-dark:  mix(black, $primary, 25%);
+$primary-darker:  mix(black, $primary, 35%);
+$primary-tint:  mix(white, $primary, 95%);
+$primary-trans-50: transparentize($primary, .5);
+$primary-trans-70: transparentize($primary, .7);
+$primary-trans-80: transparentize($primary, .8);
+
+$neutral-lighter: lighten($neutral, 22%);
+$neutral-light:  lighten($neutral, 18%);
+$neutral-dark:  mix(black, $neutral, 10%);
+$neutral-darker: mix(black, $neutral, 20%);
+$neutral-darkest: mix(black, $neutral, 30%);
+$neutral-tint: mix(white, $neutral, 95%);
+$neutral-trans-50: transparentize($neutral, .5);
+$neutral-trans-70: transparentize($neutral, .7);
+$neutral-trans-80: transparentize($neutral, .8);
+
+$gradient: linear-gradient(90deg, $accent-darker 0%, $primary 100%);
+$gradient-rev: linear-gradient(90deg, $primary 0%, $accent-darker 100%);
+$gradient-blue: linear-gradient(180deg, $neutral 0%, $primary 100%);
+
+$brand-colors: (
+green: $green,
+turquoise: $turquoise,
+blue: $blue,
+purple: $purple,
+magenta: $magenta,
+orange: $orange,
+primary: $primary,
+red: $red,
+midblue: $midblue,
+gold: $gold,
+);
+
+$ui-colors: (
+neutral: $neutral,
+accent: $accent,
+rev: $rev,
+blk: $blk,
+);
+
+@each $color, $value in $brand-colors{
+  .#{$color}-lightest {color: mix(white, $value, 90%) !important;}
+  .#{$color}-lighter {color: lighten($value, 35%) !important;}
+  .#{$color}-light {color: lighten($value, 25%) !important;}
+  .#{$color} {color: $value !important;}
+  .#{$color}-dark {color: mix(black, $value, 30%) !important;}
+  .#{$color}-darker {color: mix(black, $value, 40%) !important;}
+  .#{$color}-tint {color: mix(white, $value, 92%) !important;}
+  .#{$color}-bg-trans-50 {background-color: transparentize($value, .5)!important; color: #fff;}
+  .#{$color}-bg-trans-70 {background-color: transparentize($value, .7)!important; color: #fff;}
+  .#{$color}-bg-trans-80 {background-color: transparentize($value, .8)!important; color: #fff;}
+  .#{$color}-bg-lighter {background-color: lighten($value, 25%)!important;}
+  .#{$color}-bg-light {background-color: lighten($value, 10%)!important;}
+  .#{$color}-bg {background-color: $value !important; color: #fff;}
+  .#{$color}-bg-dark {background-color: darken($value, 10%)!important; color: #fff;}
+  .#{$color}-bg-darker {background-color: darken($value, 20%)!important; color: #fff;}
+  .#{$color}-bg-darkest {background-color: darken($value, 35%)!important; color: #fff;}
+  .#{$color}-bg-tint {background-color: mix(white, $value, 92%)!important;}
+  .#{$color}-border {border-color: $value !important;}
+  .#{$color}-gradient {background: linear-gradient(-45deg, $value 0%, $primary 60%)!important; color: #fff;}
+}
+
+@each $color, $value in $ui-colors{
+  .#{$color}-lighter {color: lighten($value, 22%) !important;}
+  .#{$color}-light {color: lighten($value, 18%) !important;}
+  .#{$color} {color: $value !important;}
+  .#{$color}-dark {color: mix(black, $value, 25%) !important;}
+  .#{$color}-darker {color: mix(black, $value, 35%) !important;}
+  .#{$color}-tint {color: mix(white, $value, 95%) !important;}
+  .#{$color}-bg-trans-50 {background-color: transparentize($value, .5)!important; color: #fff;}
+  .#{$color}-bg-trans-70 {background-color: transparentize($value, .7)!important; color: #fff;}
+  .#{$color}-bg-trans-80 {background-color: transparentize($value, .8)!important; color: #fff;}
+  .#{$color}-bg-lighter {background-color: lighten($value, 22%) !important;}
+  .#{$color}-bg-light {background-color: lighten($value, 18%) !important;}
+  .#{$color}-bg {background-color: $value !important; color: #fff;}
+  .#{$color}-bg-dark {background-color: darken($value, 10%)!important; color: #fff;}
+  .#{$color}-bg-darker {background-color: darken($value, 20%)!important; color: #fff;}
+  .#{$color}-bg-darkest {background-color: darken($value, 30%)!important; color: #fff;}
+  .#{$color}-bg-tint {background-color: mix(white, $value, 92%)!important;}
+  .#{$color}-border {border-color: $value !important;}
+  .#{$color}-gradient {background: linear-gradient(-45deg, $value 0%, $primary 60%)!important; color: #fff;}
+}
