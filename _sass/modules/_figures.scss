@@ -2,12 +2,13 @@ figure {
   margin: 1em 0;
   z-index: 1;
   max-width: 100%;
-
+  
   &.flourish {
     position: relative;
     display: grid;
     grid-template-columns: 10em 1fr;
     grid-template-rows: 1fr;
+
 
 
     figcaption {
@@ -17,6 +18,7 @@ figure {
       align-items: center;
       padding: 10% 10%;
       font-size: 4em;
+      line-height: 1;
       color: $rev;
       text-shadow: $text-shadow;
       text-align: right;
@@ -25,6 +27,7 @@ figure {
     img {
       grid-row: 1 / 1;
       grid-column: 1 / span 2;
+
     }
   }
   &.flourish:before {
@@ -54,7 +57,7 @@ figure {
 
   img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     z-index: -1;
   }
