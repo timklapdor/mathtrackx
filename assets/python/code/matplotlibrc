@@ -1,0 +1,78 @@
+## ***************************************************************************
+## * LINES                                                                   *
+
+lines.linewidth  : 2.2  ## line width in points
+lines.markersize : 6  ## marker size, in points
+
+## ***************************************************************************
+## * FONT                                                                    *
+
+font.family     : sans-serif  ## <--- Default option
+font.size       : 10          ## <--- Gone back to 10 - seems the right scale in platform
+font.sans-serif : Open Sans, Arial, Helvetica, Avant Garde, sans-serif, Computer Modern Sans Serif
+font.weight  : light
+
+## ***************************************************************************
+## * TEXT                                                                    *
+
+text.color       : 102535   ##   <--- Colour matches
+text.usetex      : False     ##   <--- Use this for latex rendering
+mathtext.fontset : cm       ##   <--- otherwise I suggest cm rather than dejavusans for mathtext rendering
+
+
+## ***************************************************************************
+## * AXES                                                                    *
+
+axes.edgecolor     : 102535   ## axes edge color
+axes.linewidth     : 1.5        ## edge linewidth
+axes.grid          : True     ## display grid
+axes.spines.left   : True     ##   <--- default option
+axes.spines.bottom : True     ##   <--- default option
+axes.spines.top    : False    ##   <--- This was True, we want this to be False (eliminates need to set manually)
+axes.spines.right  : False    ##   <--- This was True, we want this to be False (eliminates need to set manually)
+axes.prop_cycle    : cycler('color', ['005a9c', 'd40000', 'b38808', 'E50064', 'FF4500', '7356C5'])
+axes.axisbelow     : True     ## True means gridlines and ticks are drawn below everything else
+axes.formatter.use_mathtext : True  ##  <--- ensure numbers in scientific notation use mathtext (may not be necessary)
+
+## ***************************************************************************
+## * TICKS                                                                   *
+
+xtick.top           : False   ## draw ticks on the top side   <--- This was True, needs to be False (xtick.bottom is True by default)
+xtick.labelbottom   : True    ## draw label on the bottom     <--- default behaviour
+xtick.major.width   : 1.5     ## major tick width in points             <--- Increased from 0.6
+xtick.major.pad     : 3     ## distance to major tick label in points <--- Decreased quite a bit from default
+xtick.color         : 102535  ## color of the tick labels     <--- This changes the colour of the numbers, I think it's too light
+xtick.direction     : inout   ## direction: {in, out, inout}          <--- I think inout is better for our plots
+xtick.major.top     : False   ## draw x axis top major ticks  <--- This was True, needs to be False (xtick.major.bottom is True by default)
+xtick.alignment     : center  ## alignment of xticks          <--- default behaviour
+
+ytick.left          : True    ## draw ticks on the left side          <--- default behaviour
+ytick.labelright    : False   ## draw tick labels on the right side   <--- default behaviour
+ytick.major.width   : 1.5     ## major tick width in points             <--- Increased from 0.6
+ytick.major.pad     : 3     ## distance to major tick label in points <--- Decreased quite a bit from default
+ytick.color         : 102535  ## color of the tick labels             <--- This changes the colour of the numbers, I think it's too light
+ytick.direction     : inout   ## direction: {in, out, inout}          <--- I think inout is better for our plots
+ytick.major.left    : True    ## draw y axis left major ticks         <--- default behaviour
+ytick.alignment     : center_baseline  ## alignment of yticks         <--- default behaviour
+
+
+## ***************************************************************************
+## * GRIDS                                                                   *
+
+grid.color     : eceeef  ## grid color
+grid.linewidth : 0.5     ## in points
+
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+
+#figure.figsize  : 5, 8  ## figure size in inches  <--- can specify default figure size here if desired...
+
+
+## ***************************************************************************
+## * SAVING FIGURES                                                          *
+
+savefig.format : svg   ##   <--- You may want to make svg the default
+svg.fonttype   : none  ##   <--- 'path' converts text to curves, 'none' will not (but fonts need to be available locally)
+
+
