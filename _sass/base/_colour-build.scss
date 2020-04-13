@@ -70,6 +70,7 @@ blk: $blk,
   .#{$color}-bg-tint {background-color: mix(white, $value, 92%)!important;}
   .#{$color}-border {border-color: $value !important;}
   .#{$color}-gradient {background: linear-gradient(-45deg, $value 0%, $primary 60%)!important; color: #fff;}
+  .#{$color}-gradient > * {color: $rev !important;}
 }
 
 @each $color, $value in $ui-colors{
@@ -91,4 +92,5 @@ blk: $blk,
   .#{$color}-bg-tint {background-color: mix(white, $value, 92%)!important;}
   .#{$color}-border {border-color: $value !important;}
   .#{$color}-gradient {background: linear-gradient(-45deg, $value 0%, $primary 60%)!important; color: #fff;}
+  .#{$color}-gradient > * {color: $rev !important;}
 }

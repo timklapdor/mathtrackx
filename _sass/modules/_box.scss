@@ -6,7 +6,11 @@
   margin: .7em 0;
 
   p {
-    margin: 0 !important;
+    margin-top: 0 !important;
+
+    &:first-child {
+      margin: 0 !important;
+    }
   }
 
   &.side {
