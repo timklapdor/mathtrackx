@@ -1,0 +1,44 @@
+article.activity {
+  display: flex;
+  margin: 1em 0;
+  border: 1px solid $neutral-light;
+  border-radius: $radius;
+  box-shadow: $shadow;
+
+  .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 12em;
+    max-width: 12em;
+
+    img {
+      padding: 1em;
+      width: calc(100%-1em);
+      height: calc(100%-1em);
+      object-fit: cover;
+    }
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      padding: 1em;
+      width: 10em;
+      fill: currentColor;
+      stroke: currentColor;
+    }
+  }
+
+  .description {
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+  }
+}

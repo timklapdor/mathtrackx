@@ -12,9 +12,9 @@ a {
 }
 }
 
-h1 {
-  padding-bottom: .1em;
-  border-bottom: .2em solid;
+.course-wrapper h1 {
+  padding-bottom: .1em !important;
+  border-bottom: .2em solid !important;
   border-image: $gradient 1 !important;
   border-radius: $radius;
 

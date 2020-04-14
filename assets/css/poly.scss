@@ -6,8 +6,10 @@ $accent: $green;
 @import "base/_colour-build";
 @import "base/_base-styles";
 @import "modules/_box";
+@import "modules/_cues";
 @import "modules/_callout";
+@import "modules/_activity";
 @import "modules/_step-list";
 @import "modules/_figures";
-
-@import "modules/_testing";
+@import "modules/_text";
+@import "modules/_profile";

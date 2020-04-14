@@ -1,0 +1,24 @@
+.adx-rules, .adx-def {
+  background: mix(white, $gold, 90%) !important;
+  border: $gold 2px solid;
+  border-top: $gold 1em solid;
+  border-radius: $radius;
+  padding: 1em 2em;
+  margin: .7em 0;
+}
+
+.adx-note {
+  background: mix(white, $purple, 90%) !important;
+  border-left: $purple 1em solid;
+  border-radius: $radius;
+  padding: 1em 2em;
+  margin: .7em 0;
+}
+
+.adx-example {
+  background: mix(white, $green, 90%) !important;
+  border-left: $green 1em solid;
+  border-radius: $radius;
+  padding: 1em 2em;
+  margin: .7em 0;
+}
