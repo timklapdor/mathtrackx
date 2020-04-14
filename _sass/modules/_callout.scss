@@ -5,6 +5,7 @@ article.callout {
   border-radius: $radius;
   box-shadow: $shadow;
 
+
   .image {
     flex: 1 .5 auto;
     display: flex;
@@ -34,6 +35,10 @@ article.callout {
     justify-content: center;
     flex-direction: column;
     padding: 1em;
+
+    & > p {
+      margin: .5em 0;
+    }
   }
 
   &.side {
