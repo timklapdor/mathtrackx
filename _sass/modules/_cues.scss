@@ -8,16 +8,16 @@
 }
 
 .adx-note {
-  background: mix(white, $purple, 90%) !important;
-  border-left: $purple 1em solid;
+  background: mix(white, $compliment, 90%) !important;
+  border-left: $compliment 1em solid;
   border-radius: $radius;
   padding: 1em 2em;
   margin: .7em 0;
 }
 
 .adx-example {
-  background: mix(white, $green, 90%) !important;
-  border-left: $green 1em solid;
+  background: mix(white, $accent, 90%) !important;
+  border-left: $accent 1em solid;
   border-radius: $radius;
   padding: 1em 2em;
   margin: .7em 0;
@@ -30,4 +30,18 @@
   border-radius: $radius;
   padding: 1em 2em;
   margin: .7em 0;
+}
+
+h3.adx-label {
+  margin-top: 2em !important;
+  width: 40% !important;
+  font-size: .8rem !important;
+  font-weight: normal !important;
+  text-transform: uppercase !important;
+  color: $primary-light !important;
+  background: $neutral-light !important;
+  padding: .5em !important;
+  border-radius: $radius;
+  border-bottom: $neutral solid 1px !important;
+  border-right: $neutral solid 1px !important;
 }
