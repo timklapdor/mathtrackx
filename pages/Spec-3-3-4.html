@@ -1,0 +1,71 @@
+<div class="adx-example">
+  <h3>Example: Maximum average temperature</h3>
+
+  <p>This table lists the mean maximum temperature in Adelaide between 1977 and 2019. </p>
+
+  <figure class="image-center">
+    <img src="" alt="">
+  </figure>
+
+  <p>Plot the points on the plane, where the vertical axis measures the mean maximum temperature and the horizontal axis measures time, in months. Try and find a trigonometric function which best represents this data.</p>
+</div>
+
+<ol class="step-list">
+  <li>
+    <p>To begin with, you need to plot the points corresponding to the values in the table. If you plot them with \(t=1\) corresponding to January and \(t=12\) corresponding to December, then you'll find this: </p>
+    <figure class="image-center">
+      <img src="" alt="">
+    </figure>
+
+    <p>This plot of points resembles the points that lie on the graph of a trigonometric function, because of the wave-like shape.</p>
+  </li>
+  <li>
+  <p>You need to try and find a trigonometric function which best fits this data.  This trigonometric function will be of the form</p>
+  \[
+  A\sin(k(t-c))+b \,.
+  \]
+  <p>To begin with, figure out what the amplitude \(A\) will be. </p>
+  </li>
+  <li>
+  <p>If the function \A\sin(k(t-c))+b\) measures temperature, then the hottest temperature possible will be \(b+A\) and the coldest temperature possible will be \(b-A\). So the difference between the hottest and coldest temperatures will be \((b+A)-(b-A) = 2A\). </p>
+  <p>The hottest temperature in the table of data is \(41.4\) and the coldest temperature is \(20.2\). The difference of these is </p>
+
+\[
+41.4-20.2 = 21.2 \,.
+\]
+  <p>Therefore, if the function \(A\sin(k(t-c))+b\) models the data in the table, then you would expect that \(2A = 21.2\) and so \(A = 10.6\).</p>
+  </li>
+  <li>
+    <p>Since \(A+b\) is the hottest temperature, and you have just found that \(A = 10.6\), you expect that \(10.6+b = 41.4\). Therefore, you find that \(b = 30.8\).  </p>
+    <p>You now only need to find the constants \(k\) and \(c\).  </p>
+    <p>The points that you have plotted resembles the graph of \(y=\sin(x)\) for \(x\) in the interval \\pi/2\leq x\leq 5\pi/2\) as shown in this graph: </p>
+
+    <figure class="image-center">
+      <img src="" alt="">
+    </figure>
+  </li>
+  <li>
+    <p>In the plot of temperatures, \(t\) ranges from \(1\) to \(12\), and so the period will change from \(2\pi\) to \(12\). Since the period is \(2\pi/k\), this tells you that \(2\pi/k = 12\) and hence \(k=\pi/6\).  </p>
+    <p>All you have left to do now is to figure out the value of the constant \(c\). When \(t=1\), you want \(k(t-c)=\pi/2\), in other words \(\pi/6(1-c) = \pi/2\). This implies that \(1-c = 3\) and therefore \(c=-2\). </p>
+    <p>Therefore, you have found the following values for the constants:</p>
+    <p>
+      \(A = 10.6\) <br>
+      \(b=30.8\) <br>
+      \(k=\pi/6\) <br>
+      \(c=-2\) <br>
+    <p>If you use the approximate value \(k=0.52\), then you find that a trigonometric function which matches this data is </p>
+
+\[
+10.6\sin(0.52(t+2))+30.8 \,.
+\]
+</li>
+<li>
+<p>If you plot the graph of this function and compare it to the points that you plotted earlier, then you get: </p>
+
+<figure class="image-center">
+  <img src="" alt="">
+</figure>
+
+<p>From this graph, it is evident that it is a good match for the points in the table, especially for the first six months of the year. </p>
+</li>
+</ol>

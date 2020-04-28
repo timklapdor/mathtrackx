@@ -6,3 +6,11 @@
   font-size: 1.3em;
   font-style: italic;
 }
+
+pre code {
+  padding: .75em !important;
+  border: 1px solid $neutral !important;
+  background: $neutral-lighter !important;
+  font-family: monospace;
+  border-radius: $radius;
+}

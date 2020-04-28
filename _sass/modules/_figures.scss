@@ -22,13 +22,11 @@ figure {
       text-align: right;
     }
 
-    img {
+    & img {
       grid-row: 1 / 1;
       grid-column: 1 / span 2;
-
-      figure img { display: block; width: 100%; height: auto; z-index: -1; }
-
-    }
+      display: block; width: 100%; height: auto; z-index: -1;
+        }
   }
   &.flourish:before {
     position: absolute;
@@ -54,12 +52,49 @@ figure {
     border-left: 2em solid $value;
   }
 }
+  figcaption {
+    font-size: .8rem;
+    color: $primary-light;
+    width: 100%;
+    font-style: italic;
+  }
 
   img {
     display: block;
     max-width: 100%;
     height: auto;
-    z-index: -1;
+  }
+
+  &.adx-2up {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid $neutral-light;
+    padding: .5em;
+    border-radius: $radius;
+
+    div {
+      flex: 1 2 50%;
+      min-width: 200px;
+    }
+
+    img {
+      min-height: 5em;
+
+    }
+
+    figcaption {
+    flex: 2 2 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      margin: 0 !important;
+      padding: .5em;
+    }
+     }
   }
 
 }

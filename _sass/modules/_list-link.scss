@@ -1,0 +1,53 @@
+.link-list {
+  list-style-type: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+  background: $accent-darker;
+  border: 1px solid $neutral;
+  border-radius: $radius;
+  color: $rev !important;
+  max-width: 60%;
+
+
+  & li {
+  padding: 1em;
+  border-bottom: 1px solid $neutral;
+  line-height: 1.4;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  &:hover, &focus {
+    background-color: $accent-dark;
+  }
+
+  a {
+   color: $rev !important;
+   text-decoration: none;
+  }
+
+  a:hover {
+   color: $rev !important;
+   text-decoration: underline !important;
+  }
+
+  a:before {
+    content: '\2197' ;
+    text-transform: uppercase;
+    font-size: .7em;
+    background: $accent;
+    color: #fff;
+    padding: .5em;
+    margin-left: 0em;
+    margin-right: 1.7em;
+    border-radius: $radius;
+    text-decoration: none !important;
+  }
+
+  p {padding: .1em 0;}
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+}
