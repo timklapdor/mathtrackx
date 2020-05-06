@@ -16,10 +16,12 @@ figure {
       align-items: center;
       padding: 10% 10%;
       font-size: 4em;
-      line-height: 1;
+      line-height: 1.05 !important;
       color: $rev;
-      text-shadow: $text-shadow !important;
+      text-shadow: $text-shadow;
       text-align: right;
+      width: auto !important;
+      background: rgba(0,0,0,.2);
     }
 
     & img {
@@ -53,7 +55,7 @@ figure {
   }
 }
   figcaption {
-    font-size: .8rem;
+    font-size: .85em;
     color: $primary-light;
     width: 100%;
     font-style: italic;
@@ -74,13 +76,13 @@ figure {
     border-radius: $radius;
 
     div {
-      flex: 1 2 50%;
+      flex: 1 2 49%;
       min-width: 200px;
+      padding: .25%;
     }
 
     img {
       min-height: 5em;
-
     }
 
     figcaption {

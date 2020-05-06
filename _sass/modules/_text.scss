@@ -14,3 +14,12 @@ pre code {
   font-family: monospace;
   border-radius: $radius;
 }
+
+article.streak button {
+  text-shadow: none !important;
+
+  &:hover {
+    text-shadow: none !important;
+
+  }
+}
