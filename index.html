@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Happy Jekylling!"
+title: "Style Simple"
 palette:
 - green
 - turquoise
@@ -14,13 +14,7 @@ palette:
 - gold
 - neutral
 - accent
-courses:
-- poly
-- spec
-- diff
-- inte
-- prob
-- stat
+course: spec
 ---
 
 
@@ -99,7 +93,7 @@ courses:
 
 <article class="activity">
   <section class="image primary-bg">
-    <img src="assets/images/diff-streak.svg" alt="" width="80%">
+    <img src="assets/images/{{ page.course }}-streak.svg" alt="" width="80%">
   </section>
   <section class="description">
     <h2>Streak Test</h2>
@@ -109,7 +103,7 @@ courses:
 
 <article class="activity">
   <section class="image primary-bg">
-    <img src="assets/images/diff-quiz.svg" alt="" width="80%">
+    <img src="assets/images/{{ page.course }}-quiz.svg" alt="" width="80%">
   </section>
   <section class="description">
     <h2>Quiz</h2>
@@ -119,7 +113,7 @@ courses:
 
 <article class="activity">
   <section class="image primary-bg">
-    <img src="assets/images/diff-walkthrough.svg" alt="" width="80%">
+    <img src="assets/images/{{ page.course }}-walkthrough.svg" alt="" width="80%">
   </section>
   <section class="description">
     <h2>Walkthrough</h2>
@@ -129,7 +123,7 @@ courses:
 
 <article class="activity">
   <section class="image primary-bg">
-    <img src="assets/images/diff-graph.svg" alt="" width="80%">
+    <img src="assets/images/{{ page.course }}-graph.svg" alt="" width="80%">
   </section>
   <section class="description">
     <h2>Graph</h2>
@@ -139,7 +133,7 @@ courses:
 
 <article class="activity">
   <section class="image primary-bg">
-    <img src="assets/images/diff-discussion.svg" alt="" width="80%">
+    <img src="assets/images/{{ page.course }}-discussion.svg" alt="" width="80%">
   </section>
   <section class="description">
     <h2>Discussion</h2>
@@ -200,14 +194,19 @@ courses:
   <figcaption>We're doing all kinds of crazy stuff right now</figcaption>
 </figure>
 
+<figure class="flourish compliment">
+  <img src="assets/images/house.jpg" alt="">
+  <figcaption class="overlay">We're doing all kinds of crazy stuff right now</figcaption>
+</figure>
+
 <h3 class="adx-label">2up Images</h3>
 
 <figure class="adx-2up">
   <div class="">
-    <img src="assets/images/diff-pattern-square.jpg" alt="" width="">
+    <img src="assets/images/{{ page.course }}-pattern-square.jpg" alt="" width="">
   </div>
   <div class="">
-    <img src="assets/images/diff-pattern-square.jpg" alt="" width="">
+    <img src="assets/images/{{ page.course }}-pattern-square.jpg" alt="" width="">
   </div>
   <figcaption>
     <p>Testing this thing out with a caption <a href="#">and a link</a>.</p>
@@ -218,7 +217,7 @@ courses:
 
 <article class="callout stack">
   <section class="image">
-  <img src="assets/images/pattern-horizontal.jpg" alt="">
+  <img src="assets/images/{{ page.course }}-pattern-horizontal.jpg" alt="">
   </section>
   <section class="description">
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
@@ -232,13 +231,13 @@ courses:
 
 <article class="callout side">
   <section class="image">
-    <img src="assets/images/spec-pattern-vertical-80.jpg" alt="">
+    <img src="assets/images/{{ page.course }}-pattern-vertical.jpg" alt="">
   </section>
   <section class="description">
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. <a href="#">Each of these articles could contain sections of related information</a>.</p>
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
-    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can <a href="#">be nested inside of sections and sections can be nested inside</a> of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
+    <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, <a href="#">for example, may be divided up into sections with related</a> articles. Each of these articles could contain sections of related information.</p>
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
     <p>Articles can be nested inside of sections and sections can be nested inside of articles. A book, for example, may be divided up into sections with related articles. Each of these articles could contain sections of related information.</p>
@@ -300,7 +299,7 @@ courses:
   <p>Just add the "colour-border" class to the box. And specify "side" or "top" class for the thicker line</p>
 </div>
 
-<div class="box side purple-border">
+<div class="box side compliment-border">
   <p>Just add the "colour-border" class to the box. And specify "side" or "top" class for the thicker line</p>
 </div>
 
