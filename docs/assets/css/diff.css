@@ -474,6 +474,44 @@
 
 .accent-gradient > * { color: #fff !important; }
 
+.compliment-lighter { color: #ff9770 !important; }
+
+.compliment-light { color: #ff885c !important; }
+
+.compliment { color: #FF4500 !important; }
+
+.compliment-dark { color: #bf3400 !important; }
+
+.compliment-darker { color: #a62d00 !important; }
+
+.compliment-tint { color: #fff6f2 !important; }
+
+.compliment-bg-trans-50 { background-color: rgba(255, 69, 0, 0.5) !important; color: #fff; }
+
+.compliment-bg-trans-70 { background-color: rgba(255, 69, 0, 0.3) !important; color: #fff; }
+
+.compliment-bg-trans-80 { background-color: rgba(255, 69, 0, 0.2) !important; color: #fff; }
+
+.compliment-bg-lighter { background-color: #ff9770 !important; }
+
+.compliment-bg-light { background-color: #ff885c !important; }
+
+.compliment-bg { background-color: #FF4500 !important; color: #fff; }
+
+.compliment-bg-dark { background-color: #cc3700 !important; color: #fff; }
+
+.compliment-bg-darker { background-color: #992900 !important; color: #fff; }
+
+.compliment-bg-darkest { background-color: #661c00 !important; color: #fff; }
+
+.compliment-bg-tint { background-color: #fff0eb !important; }
+
+.compliment-border { border-color: #FF4500 !important; }
+
+.compliment-gradient { background: linear-gradient(-45deg, #FF4500 0%, #102535 60%) !important; color: #fff; }
+
+.compliment-gradient > * { color: #fff !important; }
+
 .rev-lighter { color: white !important; }
 
 .rev-light { color: white !important; }
@@ -693,6 +731,8 @@ figure.flourish:before { position: absolute; content: " "; top: 0; right: 0; wid
 figure.neutral.flourish:before { background: linear-gradient(90deg, rgba(185, 192, 198, 0.4) 0%, rgba(185, 192, 198, 0.4) 15%, rgba(185, 192, 198, 0) 15%); border-left: 2em solid #B9C0C6; }
 
 figure.accent.flourish:before { background: linear-gradient(90deg, rgba(115, 86, 197, 0.4) 0%, rgba(115, 86, 197, 0.4) 15%, rgba(115, 86, 197, 0) 15%); border-left: 2em solid #7356C5; }
+
+figure.compliment.flourish:before { background: linear-gradient(90deg, rgba(255, 69, 0, 0.4) 0%, rgba(255, 69, 0, 0.4) 15%, rgba(255, 69, 0, 0) 15%); border-left: 2em solid #FF4500; }
 
 figure.rev.flourish:before { background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 15%, rgba(255, 255, 255, 0) 15%); border-left: 2em solid #fff; }
 

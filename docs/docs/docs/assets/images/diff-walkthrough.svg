@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Walkthrough</title>
+  <rect style="fill:none;stroke:#7356C5;stroke-miterlimit:10;stroke-width:6px;" x="102.5" y="22.5" width="34" height="34"/>
+  <path style="fill:none;stroke:#7356C5;stroke-miterlimit:10;stroke-width:6px;stroke-dasharray:8"  d="M66.5,89.5H116A7.46,7.46,0,0,1,123.5,97v30.66a9.88,9.88,0,0,1-9.88,9.88H23.5"/>
+  <path style="fill:none;stroke:#7356C5;stroke-miterlimit:10;stroke-width:6px;"  d="M102.5,39.5H53.57A14.07,14.07,0,0,0,39.5,53.57V75.43A14.07,14.07,0,0,0,53.57,89.5H66.5"/>
+</svg>
