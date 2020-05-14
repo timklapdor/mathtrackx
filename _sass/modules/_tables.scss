@@ -1,0 +1,21 @@
+table.accent-style {
+  width: 100% !important;
+
+  & caption {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+  }
+
+  & thead th {
+    background: $accent !important;
+    color: $rev !important;
+  }
+
+  &.adx-70w {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+}

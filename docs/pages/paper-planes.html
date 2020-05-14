@@ -1,0 +1,53 @@
+<link rel="stylesheet" type="text/css" href="/static/diff.css"/>
+
+<h1>Logarithms and paper planes</h1>
+
+<p>Some projectile motion can be modelled using logarithms. Sometimes a neat parabola may not be the best way to describe the path of an object, depending on the circumstance.<p>
+
+    <p style="text-align:center"><img src="/static/plane.gif" width="80%" alt="paper plane being thrown through the air from 10 meters above ground"></p>
+
+<p>In this example, I throw a paper plane off of a \(10\)m high building near my house. It glides through the air and lands some distance away. The plane’s flight can be modelled by \(s(t) = 5\ln{1-0.01t} + 10\). The value of \(s(t)\) is the plane’s displacement from the origin \(y=0\).</p>
+
+ <p>We have to answer the following regarding this logarithmic model:</p>
+
+<ul class="block-list">
+  <li>What’s the derivative of this function? What does it represent?</li>
+  <li>Evaluate the derivative at \(t=50\) seconds.</li>
+  <li>Differentiate the function again. What does this represent?</li>
+  <li>How much time has passed when \(s’’(t)=-0.0025\)?</li>
+</ul>
+
+<p>We are given this function s(t) = \(5\ln(1-0.01t) + 10\) and our first task is to differentiate it. **graph it if necessary**</p>
+
+<p>Following the rules you learned about how to differentiate a logarithm, we can write:
+\[ \frac{d}{dt}(5 \ln(1 - 0.01 t) + 10) = \frac{-0.05}{1 - 0.01 t} \,.\]
+</p>
+
+<p>There is another way of describing this function. Since the original function described displacement with respect to time, we can say that the derivative is describing how much the displacement is changing with respect to time. Hopefully that sounds familiar! Yes it’s the velocity function!</p>
+
+<p>Next, we have to use this velocity function to find the velocity at \(t=50\) seconds.
+\[ v(50) = \frac{-0.05}{1-0.01\times 50} = -0.1\]
+metres per second
+</p>
+
+<p>So at this instant, the plane is losing \(0.1\)m of altitude with every second that passes. If you look at the graph, you’ll notice that this altitude continues to decrease more rapidly, which means our derivative value will also decrease faster.</p>
+
+<p>Over halfway there! Now we are after the second derivative. Hopefully you recall the derivative of velocity is acceleration.
+\[\frac{d^2}{dt^2} (5\ln{1 - 0.01 t} + 10) = \frac{-0.0005}{1 - 0.01 t)^2} \,.\]
+</p>
+
+<p>Our new function here gives significantly smaller values than the velocity, which leads us to infer that the speed of the paper plane is changing very slowly. In context, this could be due to something like tail wind or air ducts or other external factors that cause the plane to glide further and thus decelerate slower.</p>
+
+<p>Finally, we are asked to find the time when the plane’s acceleration is \(-0.0025\).
+\[\begin{aligned} &-0.0025 = a(t) = \frac{-0.0005}{(1-0.01t)^2} \\
+\implies &\frac{-0.0005}{-0.0025} = (1-0.01t)^2 \\
+&\vdots \\
+\implies &t=55.279 \,.\end{aligned}\]
+</p>
+
+
+\( (x^2 + x + 1)^{2.7}  \)
+
+\( \cos(x^2 + x + 2)  \)
+
+\( 2^x^2  \)

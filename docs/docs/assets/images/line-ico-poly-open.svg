@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="poly-open">
+    <path class="cls-3" d="M102.33,24.91Q83,55.3,63.6,45.63q-17-8.52-34.08-48.08M14-2.45Q38.81,75.67,63.6,88.07,83,97.76,102.33,67.35M22.12-2.45Q42.87,53.89,63.6,64.27,83,74,102.33,43.55M100,0m0,100"/>
+  </g>
+</svg>

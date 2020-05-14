@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="/static/diff.css"/>
+
+<div class="profile">
+	<img src="/static/110-mel.jpg" alt="Photo of Melissa Humphries"/>
+	<h2>Melissa Humphries</h2>
+</div>
+
+<p></p>
+
+<p>Before you start, let’s recap a bit of notation. Remember that rise over run is written:
+\[ \frac{Rise}{Run} = \frac{f(x+h)-f(x)}{x+h-x} = \frac{f(x+h)-f(x)}{h} \,. \]</p>
+
+<figure>
+  <img src="/static/rise_run_recap.gif" width="60%" alt="Rise and run plotted on a graph, showing the rise and run changing as points move"/>
+  <figcaption>Rise and run plotted on a graph, showing the rise and run changing as points move.</figcaption>
+</figure>
+
+<div class="tipping">
+<p>You need to consider the limit as \(h\) approaches \(0\). Or, formally:
+\[ \lim_{h\to 0} \,. \]</p>
+
+<p>Now the terminology for the derivative of \(y\) given your values \(x\) is noted:
+\[ \frac{dy}{dx} \,. \]
+So this is the mathematical way of saying, 'I’m evaluating the derivative.'</p>
+
+<p>Now, if you put all of that together, you get the whole function
+\[ \frac{dy}{dx} = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} \,. \]</p>
+
+<p>This is the equation you need to work out the derivative using first principles.</p>
+
+<p>So what does that look like in practice? Let’s go back to the equation in the Orientation section. The equation was:
+\[ f(x) = 3 +2x \,. \]</p>
+
+<p>And you showed that it had slope (or derivative!)  \(m=2\). But can you work that out using first principles? Let’s set up your equation:</p>
+
+<p>First, you need to work out \(f(x+h)\):
+\[ f(x+h) = 3 + 2(x+h) = 3 + 2x + 2h \,. \]</p>
+
+<p>OK, now put it into your equation:
+\[\begin{aligned}
+\frac{dy}{dx} &= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}\\
+&= \lim_{h\to 0} \frac{3 + 2x + 2h-(3 + 2x)}{h} \,. \end{aligned}\]</p>
+
+<p>Now simplify it:
+\[\begin{aligned}
+\frac{dy}{dx} &= \lim_{h\to 0} \frac{3 + 2x + 2h-3 - 2x}{h} \\
+&= \lim_{h\to 0} \frac{2h}{h} \,. \end{aligned}\]</p>
+
+<p>You should notice here that you have a common factor \(h\) in both the numerator and denominator. This should always be the case at this point. If you have anything that doesn’t have a \(h\) in it, you’ve done something incorrectly and should go back and check your working out.</p>
+
+<p>From here, you can cancel out the common factor of \(h\)
+\[ \frac{dy}{dx} = \lim_{h\to 0} 2 \,. \]</p>
+
+<p>Now you take the limit (which is easy in this case because there are no \(h\)’s left!) and you get:
+\[ \frac{dy}{dx} = 2 \]
+which is exactly what you expected!</p>
+</div>

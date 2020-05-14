@@ -1,0 +1,176 @@
+---
+layout: index
+---
+
+<p>The following table summarises all the differentiation rules you’ve learnt in this course. It is essential that you remember all the <strong>fundamental</strong> rules. With these you should be able to tackle any problem involving differentiation.</p>
+
+<table class="accent-style">
+  <caption>The fundamentals</caption>
+<thead>
+  <tr>
+    <th>\(f(x)\)</th>
+    <th>\(f’(x)\)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>\(c\) constant</td>
+    <td>\(0\)</td>
+  </tr>
+  <tr>
+    <td>\(x^n\) for a natural number\(n\)\(x^a\) for any real \(a\neq0\)</td>
+    <td>\(nx^{n-1}\)\(ax^{a-1}\)</td>
+  </tr>
+  <tr>
+    <td>\(e^{x}\)\(a^{x}\) for any \(a&gt;0\)</td>
+    <td>\(e^{x}\)\(\ln(a)a^{x}\)</td>
+  </tr>
+  <tr>
+    <td>\(\log(x)\)\(\ln(x)\)\(log_{b}(x)\)</td>
+    <td>\(1/(\ln(10)x)\)\(1/x\)\(1/(\ln(b)x)\)</td>
+  </tr>
+  <tr>
+    <td>\(\sin(x)\)\(\cos(x)\)\(\tan(x)\)</td>
+    <td>\(\cos(x)\)\(-\sin(x)\)\(1/\cos(x)^{2}\)</td>
+  </tr>
+  <tr>
+    <td>\(a\,g(x)\) for a real number\(a\)</td>
+    <td>\(a\,g’(x)\)</td>
+  </tr>
+  <tr>
+    <td>\(g(x)+h(x)\)\(g(x)-h(x)\)</td>
+    <td>\(g’(x)+h’(x)\)\(g’(x)-h’(x)\)</td>
+  </tr>
+  <tr>
+    <td>\(g(x)\, h(x)\)</td>
+    <td>\(g’(x)\,h(x)+g(x)\,h’(x)\)</td>
+  </tr>
+  <tr>
+    <td>\(g(x)/h(x)\)</td>
+    <td>\((g’(x)\,h(x)-g(x)\,h’(x))/h(x)^2\)</td>
+  </tr>
+  <tr>
+    <td>\(g(h(x))\)</td>
+    <td>\(h’(x)\,g’(h(x))\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>The following two tables of <strong>common chain rule examples</strong> can all be obtained using all the fundamental rules above. It is therefore not essential to remember all of these, but there are occasions when they may come in handy and save you some time.</p>
+
+<table class="accent-style">
+  <caption>Common chain rule examples 1</caption>
+<thead>
+  <tr>
+    <th>Function</th>
+    <th>Derivative</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>\(f(x)^{a}\) for natural,integer, rational or real \(a\)</td>
+    <td>\(a\, f’(x)\, f(x)^{a-1}\)</td>
+  </tr>
+  <tr>
+    <td>\(e^{f(x)}\)</td>
+    <td>\(f’(x)\, e^{f(x)}\)</td>
+  </tr>
+  <tr>
+    <td>\(a^{f(x)}\) for any \(a&gt;0\)</td>
+    <td>\(\ln(a)\, f’(x)\, a^{f(x)}\)</td>
+  </tr>
+  <tr>
+    <td>\(\log(f(x))\)</td>
+    <td>\(f’(x) / (\ln(10)\, f(x))\)</td>
+  </tr>
+  <tr>
+    <td>\(\ln(f(x))\)</td>
+    <td>\(f’(x) / f(x)\)</td>
+  </tr>
+  <tr>
+    <td>\(log_{b}(f(x))\)</td>
+    <td>\(f’(x) / (\ln(b)\,f(x))\)</td>
+  </tr>
+  <tr>
+    <td>\(\sin(f(x))\)</td>
+    <td>\(f’(x)\, \cos(f(x))\)</td>
+  </tr>
+  <tr>
+    <td>\(\cos(f(x))\)</td>
+    <td>\(-f’(x)\, \sin(f(x))\)</td>
+  </tr>
+  <tr>
+    <td>\(\tan(f(x))\)</td>
+    <td>\(f’(x) / \cos(f(x))^{2}\)</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+<table  class="accent-style">
+  <caption>Common chain rule examples 2</caption>
+<thead>
+  <tr>
+    <th>Function</th>
+    <th>Derivative</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>\(f(x^a)\) for natural, integer,rational or real \(a\)</td>
+    <td>\(a\, x^{a-1}\, f’(x^{a})\)</td>
+  </tr>
+  <tr>
+    <td>\(f\left(e^{x}\right)\)</td>
+    <td>\(e^{x}\,f’\left(e^{x}\right)\)</td>
+  </tr>
+  <tr>
+    <td>\(f\left(a^{x}\right)\) for any\(a&gt;0\)</td>
+    <td>\(\ln(a)\,a^{x}\,f’\left(a^{x}\right)\)</td>
+  </tr>
+  <tr>
+    <td>\(f(\log(x)))\)</td>
+    <td>\(f’(\log(x))/(\ln(10)x)\)</td>
+  </tr>
+  <tr>
+    <td>\(f(\ln(x))\)</td>
+    <td>\(f’(\ln(x))/x\)</td>
+  </tr>
+  <tr>
+    <td>\(f\left(\log_{b}(x)\right)\)</td>
+    <td>\(f’\left(log_{b}(x)\right)/(\ln(b)x)\)</td>
+  </tr>
+  <tr>
+    <td>\(f(\sin(x))\)</td>
+    <td>\(\cos(x)\,f’(\sin(x))\)</td>
+  </tr>
+  <tr>
+    <td>\(f(\cos(x))\)</td>
+    <td>\(-\sin(x)\,f’(\cos(x))\)</td>
+  </tr>
+  <tr>
+    <td>\(f(\tan(x))\)</td>
+    <td>\(f’(\tan(x)) / \cos(x)^{2}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>If you ever need to determine the equation of a tangent or normal line, then the following two rules are all you need.</p>
+
+
+<table class="accent-style">
+  <caption>Tangent and normal lines</caption>
+<thead>
+  <tr>
+    <th>Tangent of \(f(x)\) at \(a\)</th>
+    <th>\(y=f’(a)(x-a)+f(a)\)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Normal of \(f(x)\) at \(a\)</td>
+    <td>\(y=-(x-a)/f’(a)+f(a)\)</td>
+  </tr>
+</tbody>
+</table>
