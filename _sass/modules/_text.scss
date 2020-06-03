@@ -23,3 +23,49 @@ article.streak button {
 
   }
 }
+
+blockquote {
+  margin: 1em 5vw !important;
+  padding: 1em;
+  font-style: italic;
+  font-size: 1.7em;
+  line-height: 1.5 !important;
+  font-weight: lighter;
+
+
+
+  p {
+    margin-bottom: 0 !important;
+
+    .center {
+      text-align: center !important;
+    }
+  }
+
+  & cite {
+    font-size: 80%;
+
+    &::before {
+      content: '\2014\00a0\00a0 ';
+      margin-left: 1em;
+    }
+  }
+
+  &.pullquote {
+  border: 0 !important;
+  box-shadow: $shadow;
+  background: $accent-darker;
+  color: $rev !important;
+  border-radius: $radius;
+
+    p, cite {
+      color: $rev !important;
+    }
+  }
+
+  &.fancyquote {
+  border-width: 4px 0 !important;
+  border-style: solid;
+  color: $accent-dark;
+  }
+}
