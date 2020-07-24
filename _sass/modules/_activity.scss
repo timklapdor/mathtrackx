@@ -13,6 +13,11 @@ article.activity {
     min-width: 12em;
     max-width: 12em;
 
+    &.tall {
+      align-items: flex-start;
+      padding-top: 2em;
+    }
+
     img {
       padding: 1em;
       width: calc(100%-1em);

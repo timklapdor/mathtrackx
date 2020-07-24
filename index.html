@@ -14,24 +14,35 @@ palette:
 - gold
 - neutral
 - accent
-course: prob
+course: stat
 ---
 
+<article class="activity">
+  <section class="image tall primary-bg">
+    <img src="assets/images/{{ page.course }}-quiz.svg" alt="" width="80%">
+  </section>
+  <section class="description">
+    <h2>Task 1 - Calcium and blood pressure</h2>
+    <p>Download the CalciumBP data set, save it and open it in your spreadsheet.</p>
 
+    <ul class="download-list">
+  			<li><a href="/static/CalciumBP.csv">CalciumBP data set</a></li>
+		</ul>
+    <p>This presents the data from 10 men who had been randomly selected to take a calcium supplement. Their blood pressure was measured before taking the supplement and again after 12 weeks of taking the supplement daily. Your data presents the amount the individual's blood pressure decreased over that time (negative numbers mean the blood pressure increased). </p>
+
+    <div class="adx-rules">
+<p>Your task is to calculate the mean and standard deviation for the variable 'Decrease'. Don’t forget to save it somewhere!</p>
+    </div>
+  <p>
+
+<p>Have a think about how you would summarise these statistics in a report… you will need to be able to discuss this in the next part of the course!</p>
+
+  </section>
+</article>
+
+  <code class="code">Testing testing</code>
 
 <h1>HTML Samples</h1>
-
-<blockquote cite="" class="fancyquote">
-  <p>The definition at the bottom (second to last box)  is not quite correct. You can’t define improper integrals of this kind using a single limit. What has been defined here is actually the Cauchy Principal Value. This sometimes exists even when the improper integral doesn’t (for example, consider lim_{a \to \infty} int_{-a}^a 2x/(x^2 + 1) dx). I think it’s true that if the improper integral exists then the CPV is the same value, so it’s not a problem in this case.</p>
-<cite>Someone Famous</cite>
-
-</blockquote>
-
-<blockquote cite="" class="pullquote">
-  <p>The definition at the bottom (second to last box)  is not quite correct. You can’t define improper integrals of this kind using a single limit. What has been defined here is actually the Cauchy Principal Value. This sometimes exists even when the improper integral doesn’t (for example, consider lim_{a \to \infty} int_{-a}^a 2x/(x^2 + 1) dx). I think it’s true that if the improper integral exists then the CPV is the same value, so it’s not a problem in this case.</p>
-</blockquote>
-
-<h2> testing</h2>
 
 <h3 class="adx-label">Course Intros</h3>
 
@@ -195,6 +206,17 @@ course: prob
   <p>Test goes here</p>
 </div>
 
+<h3 class="adx-label">Fancy Quote and Pull Quote</h3>
+
+<blockquote cite="" class="fancyquote">
+  <p>The definition at the bottom (second to last box)  is not quite correct. You can’t define improper integrals of this kind using a single limit. What has been defined here is actually the Cauchy Principal Value. This sometimes exists even when the improper integral doesn’t (for example, consider lim_{a \to \infty} int_{-a}^a 2x/(x^2 + 1) dx). I think it’s true that if the improper integral exists then the CPV is the same value, so it’s not a problem in this case.</p>
+<cite>Someone Famous</cite>
+</blockquote>
+
+<blockquote cite="" class="pullquote">
+  <p>The definition at the bottom (second to last box)  is not quite correct. You can’t define improper integrals of this kind using a single limit. What has been defined here is actually the Cauchy Principal Value. This sometimes exists even when the improper integral doesn’t (for example, consider lim_{a \to \infty} int_{-a}^a 2x/(x^2 + 1) dx). I think it’s true that if the improper integral exists then the CPV is the same value, so it’s not a problem in this case.</p>
+</blockquote>
+
 <h3 class="adx-label">Image Flourish</h3>
 
 <figure class="flourish accent">
@@ -262,7 +284,7 @@ course: prob
 <h3 class="adx-label">Step List</h3>
 
 <ul class="step-list">
-  <li>Gather your ingredients</li>
+  <li class="step-2">Gather your ingredients</li>
   <li>Pour all the ingreients into a bowl</li>
   <li>Stir and mix together</li>
   <li>Place into the over to cook</li>
@@ -322,3 +344,17 @@ course: prob
 <div class="box accent-gradient">
   <p>This one uses a gradient - so add the "colour-gradient" class to the box instead.</p>
 </div>
+
+<div class="half">
+  <div class="box top compliment-border">
+    <p>If you enjoyed EdX then why not try the <a href="" target="_blank">Micromasters in Big Data</a>.</p>
+  </div>
+
+  <div class="box top compliment-border">
+    <p>If you enjoyed EdX then why not try the <a href="" target="_blank">Micromasters in Big Data</a>.</p>
+  </div>
+      <div class="box bottom compliment-border">
+    <p>If you enjoyed EdX then why not try the <a href="" target="_blank">Micromasters in Big Data</a>.</p>
+  </div>
+</div>
+  

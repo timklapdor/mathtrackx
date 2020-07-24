@@ -3,6 +3,10 @@ ol.fancy-ol {
   padding: 1em 2em !important;
   border-radius: $radius;
 
+  &.inside {
+    background: none !important;
+  }
+
   & li {
     padding: .5em 0;
     border-bottom: 1px solid $neutral;

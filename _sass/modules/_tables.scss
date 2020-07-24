@@ -12,8 +12,18 @@ table.accent-style {
     color: $rev !important;
   }
 
+  &.centered tr, tr {
+    text-align: center !important;
+  }
+
   &.adx-70w {
   max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  &.adx-40w {
+  max-width: 40%;
   margin-left: auto;
   margin-right: auto;
   }

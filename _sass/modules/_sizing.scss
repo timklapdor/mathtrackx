@@ -24,3 +24,16 @@ figure img {
 .breathing-3 {
   margin: $pad3 0 !important;
 }
+
+div.half {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  & > * {
+    max-width: 40%;
+    margin: .25em;
+  }
+}
